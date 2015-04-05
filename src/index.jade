@@ -1,0 +1,94 @@
+doctype html.no-js(lang='en')
+head
+    meta(charset='utf-8')
+    title Armada, cross platform application distribution channel
+    meta(name='Armada', content='Armada Homepage')
+    meta(name='kaustav', content='apps app distribution store marketplace')
+    link(href='vendor/bootstrap.min.css', rel='stylesheet', media='screen')
+    link(href='vendor/normalize.css', rel='stylesheet', media='screen')
+    link(href='assets/styles.css', rel='stylesheet', media='screen')
+    script(src='vendor/firebase.js')
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+        span.top
+          img(src='images/armada_logo.png')
+          h1 Armada
+        span.
+          <a href="https://github.com/kaustavha/armada"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+    // Section #1
+    section(data-speed='6', data-type='background', id='intro')
+      .container
+        .row-fluid
+          .box-intro.text-center
+            h1 Armada
+            br
+            h2 The next generation app store
+    // Section #2
+    section#home(data-speed='4', data-type='background')
+      .container
+        .hero-unit
+          .container-fluid
+            .row
+              .col-md-12.text-center
+                h1 Armada is a fully cross platform marketplace built for developers
+              .col-md-6.text-center
+                img(src='images/cordova.png' class='example_logo')
+              .col-md-6
+                p Building cross platform mobiles apps with Cordova or something like it? Armada is the appstore you've been waiting for 
+            .row
+              .col-md-6
+                p Building cross platform desktop apps with Node-webkit or something like it? Armada aims to be the node-webkit app marketplace
+              .col-md-6.text-center
+                img(src='images/nw.png' class='example_logo')
+
+      .container
+        .hero-unit.text-center
+          h1 About Armada
+          p Armada is targeted at developers building cross platform application and attempting to reach everything from native desktop to the ubuntu phone,
+            | and novice or hobbyist developers who can't validate the fees associated with uploading apps to google play or apples app store.
+          p The goal is to make distributing applications drastically easier and cheaper than it is right now
+          hr
+          br
+          h2 What's the problem with all the other app stores?
+          p Right now we have many different platform specific app stores;
+            | A remnant of a previous era when applications were platform specific.
+            | Think Microsoft Office for Windows, Open Office for Linux etc
+          p But this model's changed considerably in recent times
+            | with applications being fully cross platform,
+            | attempting to be the best product for the job
+          hr
+          p Development tooling for building cross platform applications has also come a long way.
+          p But it's still very difficult and expensive for developers targeting many platforms to distribute their apps everywhere.
+          h2 Why is now a good time for this?
+          p We are seeing more searches, growing exponentially, for cross platform frameworks like: 
+            a(target='_blank' href='http://www.google.ca/trends/explore#q=xamarin&date=1%2F2011%2051m&cmpt=q&tz=') xamarin, 
+            a(target='_blank' href='http://www.google.ca/trends/explore#q=phonegap&cmpt=q&tz=')  cordova/phonegap
+            |  and 
+            a(target='_blank' href='http://www.google.ca/trends/explore#q=node-webkit&date=1%2F2011%2051m&cmpt=q&tz=') node-webkit
+          p We also see increased interest in learning how to code, specifically in JS, with a majority coming from 
+            a(target='_blank' href='http://www.google.ca/trends/explore#q=js%20tutorial&date=1%2F2011%2051m&cmpt=q&tz=') India
+          hr
+          p Developers agree that distributing applications to all the different marketplaces is tiresome
+            | It is also prohibitively expensive for a lot of new, younger developers and those situated in developing countries
+            | We also notice a rising need for personal marketplaces for hardware startups e.g Thalmic Labs, Oneplus
+    // Section #3
+    section#about(data-speed='2', data-type='background')
+      .container.text-center
+        .signup
+          h2.signup-title Sign up for updates and early access
+            p#signup-success.text-success
+            p#signup-error.text-danger
+            form#signup-form.signup-form.form-inline(role='form', onsubmit='return signup(this)')
+              input.form-control(name='email', type='email', placeholder='Your email. eg., joe@acme.com', required='')
+              button#signup-button.btn.btn-success(type='submit') Join now
+        .row-fluid
+          .span
+            h2 Contact:
+            | Email:
+            a(href='hi@kaustav.me')  hi@kaustav.me
+            br
+            |  Phone: (226) - 989 3852
+    script(src='vendor/jquery.min.js')
+    script(src='vendor/bootstrap.min.js')
+    script(src='assets/scripts.js')
